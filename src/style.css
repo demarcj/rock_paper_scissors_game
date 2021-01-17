@@ -3,11 +3,32 @@
   margin: 0;
   padding: 0;
 }
-
 :root{
   font-size: 10px;
+  color: white;
+  font-weight: 600;
+  --rounded_corners:5px;
+  --button_text_color:#57536c;
 }
-
-h1{
+body{ background: darkslateblue; }
+header{
+  border: white 1px solid;
+  padding: 15px;
+  display: grid;
+  grid-template-columns:repeat(2, 1fr);
+  border-radius:var(--rounded_corners);
+  margin-top: 45px;
+}
+main, footer{
+  padding: 45px 15px;
+}
+h1{font-size: 3.2rem;}
+h2{font-size: 2.4rem;}
+p{font-size: 18px;}
+button{
+  padding:7px;
+  border-radius:var(--rounded_corners);
   font-size: 2.4rem;
 }
+
+

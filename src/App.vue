@@ -1,17 +1,22 @@
 <template>
   <div class="container">
-    <ScoreBoard />
+    <TheHeader />
+    <TheMain />
+    <TheFooter />
   </div>
 </template>
 
 <script>
-  import ScoreBoard from './components/ScoreBoard.vue';
+  import TheHeader from './components/TheHeader.vue';
+  import TheMain from './components/TheMain.vue';
+  import TheFooter from './components/TheFooter.vue';
   import "./style.css";
 
   export default {
-    name: 'App',
     components: {
-      ScoreBoard
+      TheHeader,
+      TheMain,
+      TheFooter
     }
   }
 </script>
@@ -20,5 +25,6 @@
   .container{
     max-width: 1600px;
     margin: 0 auto;
+    padding: 0 15px;
   }
 </style>
